@@ -36,9 +36,9 @@ def delete_pass(self):
         '''
         search  accounts
         '''
-        for pass in cls.pass_list:
-            if pass.account == account:
-                return pass
+      for pass in cls.pass_list:
+       if pass.account == account:
+            return Pass
 
                 # confirm passlock
 
@@ -47,8 +47,8 @@ def pass_exist(cls, account):
     '''
     confirm if class exists
     '''
-    for pass in cls.pass_list:
-        if Pass.account == account:
+    for pass in cls.pas_list:
+        if pass.account == account:
             return True
             return False
              
