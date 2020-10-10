@@ -50,6 +50,22 @@ def find_user(username)
         """
         pass.save_pass()
 
+        # displaying
+
+    def display_pass
+      """
+      displaying saved passlocker
+      """
+    return passlocker.display_pass()
+
+    # searching
+
+    def find_account(account):
+      """
+      search account
+      """
+      return passlocker.find_account(account)  
+
 
        
 
