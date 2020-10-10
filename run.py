@@ -42,6 +42,15 @@ def find_user(username)
         new_pass = passlocker(account, email, password)
         return new_pass
 
+        saving passlocker
+
+    def save_pass(pass):
+        """
+        save passlocker
+        """
+        pass.save_pass()
+
+
        
 
        
