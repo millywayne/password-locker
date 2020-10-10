@@ -38,7 +38,7 @@ def test_save_passlocker(self):
 
      """
      self.new_pass.save_pass()
-     self.assertEqual(len(passlocker.pass_list)1)
+     self.assertEqual(len(passlocker.pass_list),1)
 
     #  testing multiple object saving
     def test_saving_multiple_pass(self):
@@ -50,7 +50,7 @@ def test_save_passlocker(self):
         self.new_pass.save_pass()
         test_pass = passlocker("Facebook", "yahoomail", "passlock")
         test_pass.save_pass()
-        self.assertEqual(len(passlocker.pass_pass_list)2)
+        self.assertEqual(len(passlocker.pass_pass_list),2)
 
        # tests to check if deletion is possible
 
@@ -64,7 +64,7 @@ def test_save_passlocker(self):
         test_pass = passlocker("Facebook", "yahoomail", "passlock")
         test_pass.save_pass()
         self.new_pass.delete_pass()
-        self.assertEqual(lens(passlocker.pass_list)1)
+        self.assertEqual(lens(passlocker.pass_list),1)
          
         #  passlock search test
 

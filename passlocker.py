@@ -35,15 +35,16 @@ def delete_pass(self):
     def find_account(cls, account):
         """
         search  accounts
+        
         """
       for pass in cls.pass_list:
-       if pass.account == account:
+        if pass.account == account:
             return Pass
 
                 # confirm passlock
 
-@classmethod
-def pass_exist(cls, account):
+ @classmethod
+ def pass_exist(cls, account):
     """
     confirm if class exists
     """
