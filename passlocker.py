@@ -1,5 +1,5 @@
-import pyperclip
-class passlockers:
+import  pyperclip
+class   passlockers:
     '''
 class that creates user account
 '''
@@ -19,7 +19,7 @@ def save_pass(self):
     '''
     self passlockers in pass_list
     '''
-    Passlockers.pass_list.append(self)
+    passlockers.pass_list.apend(self)
 
     # delete passlock
 
@@ -27,14 +27,14 @@ def delete_pass(self):
     '''
     delete passlockers
     '''
-    Passlockers.pass_list.remove(self)
+    passlockers.pass_list.remove(self)
 
     # search passlock
 
     @classmethod
     def find_account(cls, account):
         '''
-        search accounts
+        search  accounts
         '''
         for pass in cls.pass_list:
             if pass.account == account:
@@ -48,9 +48,10 @@ def pass_exist(cls, account):
     confirm if class exists
     '''
     for pass in cls.pass_list:
-        if pass.account == account:
-         return True
-     return False
+        if Pass.account == account:
+            return True
+            return False
+             
                 
         # display passlock
 
@@ -65,8 +66,8 @@ def display_pass(cls):
 
     @classmethod
     def copy_password(cls, passlock):
-        find_account =credentials.find_account(passlock)
-        peperclip.copy(find_account.password)
+        find_account = passlockers.find_account(passlock)
+        pyperclip.copy(find_account.password)
 
 
 
