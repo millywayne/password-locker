@@ -4,62 +4,62 @@ import random
 
 
 
-def create_user(fname, lname, email):
+def create__user(fname, lname, email):
     """
     new user function
     """
-    new_user = user(fname, lname, email)
-    return new_user
+    new__user = user(fname, lname, email):
+    return new__user
 
 
-def create_passlocker(username, userpasslock, email)
+def create__passlocker(username, userpasslock, email)
 """
 create new user passlock
 """
-new_passlocker = passlocker(username, userpassword, email)
-return new_passlocker
+new__passlocker = passlocker(username, userpassword, email)
+return new__passlocker
 
 
-def save_user(user):
+def save__user(user):
     """
     saving user
     """
-    user.save_user_details()
+    user.save__user__details()
 
 
-def save_pass(passlocker):
+def save__pass(passlocker):
     """
     saving user passlocker
     """
-    passlocker.save_passlocker()
+    passlocker.save__passlocker()
 
 
-def del_user(user):
+def del__user(user):
     """
     deleting user
     """
-    user.delete_user()
+    user.delete__user()
 
 
-def del_pass(passlocker):
+def del__pass(passlocker):
     """
     deleting all user passlocks
     """
-    passlockers.delete_passlocker()    
+    passlockers.delete__passlocker()    
 
 
-def display_user():
+def display__user():
     """
     displaying saved users
     """
-    return User.display_user()
+    return User.display__user()
 
 
-def  display_pass():
+def  display__pass():
     """
     returning saved user passlocks
     """
-    return Passlocker.display_passlocker()
+    return Passlocker.display__passlocker()
 
 
     def main():
@@ -69,9 +69,9 @@ def  display_pass():
 while True:
         print("Allowed Action: \n ad - create new user account with user-defined passlock\n ag - create a new user account with an auto-generated passlock\n da - display all user account \n ex -exit the contact list \n")
 
-        short_code = input().lower()
+        short__code = input().lower()
 
-        if short_code == '1':
+        if short__code == '1':
             print("New User")
             print("-" * 20)
             print("Create account")
@@ -80,28 +80,28 @@ while True:
             print("Hi! welcome to {account} we love having you here!")
 
             print("First Name...")
-            f_name = input()
+            f__name = input()
 
             print ("Last Name...")
-            l_name = input()
+            l__name = input()
 
             print("Email Adress...")
-            e_adress = input()
+            e__adress = input()
 
             print("Please Enter username...")
-            user_name = input()
+            user__name = input()
 
             print("Please Enter your passlock...")
             plock = input()
 
-            save_user(create _user(f_name, l_name, e_adress))
-            save_pass(create_passlocker(user_name, p_lock, e_adress))
+            save__user(create __user(f__name, l__name, e__adress))
+            save__pass(create__passlocker(user__name, p__lock, e__adress))
             print('\n')
-            print(f" Your new {account} by {f_name} {l_name} has been succesfully created" )
-            print(f" Your username is {user_name} and the passlock is {plock}")
+            print(f" Your new {account} by {f__name} {l__name} has been succesfully created" )
+            print(f" Your username is {user__name} and the passlock is {plock}")
             print('\n')
 
-      elif short_code =='2':
+      elif short__code =='2':
            print("New User")
            print("-" * 20)
            print("Hi!Please Enter the name of the account you would like to create thank you.")
@@ -109,36 +109,36 @@ while True:
            print(f" Welcome to {account} and Enjoy!!!")
 
            print("First Name...")
-           f_name = input()
+           f__name = input()
 
            print("Last Name...")
-           l_name = input()
+           l__name = input()
 
            print("Email Adress...")
-           e_adress = input()
+           e__adress = input()
 
            print("Enter username... Hint: Generating a secure passlock")
-           user_name = input()
+           user__name = input()
 
            s = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstvuwxyz"
            plock = "".join(random.sample(s, 8))
 
-           save_user(create_user(f_name, l_name, e_adress))
-           save_pass(create_passlocker(user_name, p_lock, e_adress))
+           save__user(create__user(f__name, l__name, e__adress))
+           save__pass(create__passlocker(user__name, p__lock, e__adress))
            print('\n')
-           print(f" Your New {account} by {f_name} {l_name} has been created successfully")
-           print(f" Your username is {user_name}")
-           print(f" Your passlock is {p_lock}")
+           print(f" Your New {account} by {f__name} {l__name} has been created successfully")
+           print(f" Your username is {user__name}")
+           print(f" Your passlock is {p__lock}")
            print('\n')
 
-       elif short_code == '3':
+       elif short__code == '3':
 
-           if display_user():
+           if display__user():
                print("Below is a list of all your user accounts")
                print('\n')
 
-               for user in display_user():
-                   print(f" {user.first_name} {user,last_name} account name {account}")
+               for user in display__user():
+                   print(f" {user.first__name} {user.last__name} account name {account}")
 
                    print('\n')
               else:
@@ -146,7 +146,7 @@ while True:
                   print("You don't have an existing account")
                   print('\n')
 
-             elif short_code == '4':
+             elif short__code == '4':
                  print(":/ Bye! Have a lovely day!!!")
                  break
              else:
@@ -154,5 +154,5 @@ while True:
                  print("Aborting!!!") 
 
             
-     if _name_ == '_main_':
+     if __name__ == '__main__':
          main()             

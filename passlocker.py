@@ -6,32 +6,32 @@ class  passlocker:
     pass_list = []
     
     
-    def _init_(self, account, email, password):
+    def __init__(self, account, email, password):
     
-    self.account = account
-    self.email = email
-    self.password = password
+     self.account = account
+     self.email = email
+     self.password = password
 
    
-def save_pass(self):
+def save__pass(self):
     """
-    self passlocker in pass_list
+    save passlocker in pass__list
     """
-    passlocker.pass_list.apend(self)
+    passlocker.pass__list.append(self)
 
     
-def delete_pass(self):
+def delete__pass(self):
     """
     delete passlocker
     """
-    passlocker.pass_list.remove(self)
+    passlocker.pass__list.remove(self)
     """
     method that returns all passlock
      """
-    return cls.pass_list
+    return cls.pass__list
 
    
 @classmethod
-def copy_password(cls, passlock):
-          find_account = passlocker.find_account(password)
-          pyperclip.copy(find_account.password)
+def copy__password(cls, passlock):
+          find__account = passlocker.find__account(password)
+          pyperclip.copy(find__account.password)
