@@ -1,7 +1,5 @@
 import pyperclip
-class passlocker
-
-class passlocker:
+class  passlocker:
     """
     class that creates user account
     """
@@ -9,7 +7,7 @@ class passlocker:
     
     
     def _init_(self, account, email, password):
-
+    
     self.account = account
     self.email = email
     self.password = password
