@@ -1,4 +1,4 @@
-# Ignores Python compiled files
+
 *.pyc
 
 .DS_Store
