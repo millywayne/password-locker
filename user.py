@@ -6,36 +6,35 @@ class user:
      """
      generating new instances
      """
-     user__list = []
+     user_list = []
 
-     def __init__(self, uname, passlock, email):
+     def _init_(self, uname, passlocker, email):
       """
       saving objects for user_list
        """
-     self.username = uname
-     self.userpasslock = passlocker
+      self.username = uname
+      self.userpasslock = passlocker
   
 
-     def save__user(self):
+     def save_user(self):
          """
      save user account
      """
-         user.user__list.append(self)
+         user.user_list.append(self)
 
        
-     def delete__user(self):
+     def delete_user(self):
          """
       delete user account
       """
-         user.user__list.remove(self)
+         user.user_list.remove(self)
          @classmethod
      
      
-         def find__user(cls, uname):
+         def find_user(cls, uname):
           """
        using search to find users
         """
-
-     for user in cls.user__list:
+     for user in cls.user_list:
       if user.username == uname:
-       return user 
+       return user   
