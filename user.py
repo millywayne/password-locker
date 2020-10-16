@@ -24,17 +24,18 @@ class user:
 
        
      def delete_user(self):
-         """
+        """
       delete user account
       """
-         user.user_list.remove(self)
-         @classmethod
-     
-     
-         def find_user(cls, uname):
-          """
-       using search to find users
-        """
-     for user in cls.user_list:
-      if user.username == uname:
-       return user   
+        user.user_list.remove(self)
+        @classmethod
+
+
+        def delete_user(cls, uname):
+         """
+          using search to find users
+             """
+         for user in cls.user_list:
+           if user.username == uname:    
+             
+              return user   
