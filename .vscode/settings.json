@@ -1,5 +1,6 @@
 {
-     "python.formatting.provider": "black"
+     "python.formatting.provider": "black",
+     "python.pythonPath": "/home/moringa/Desktop/Passlocker/virtual/bin/python3.8"
 }
 
 
